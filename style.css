@@ -1,0 +1,46 @@
+body {
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d') center/cover no-repeat;
+}
+
+/* Fade Animations */
+.fade-in {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.fade-in-delay {
+    animation: fadeIn 2.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Portfolio Cards */
+.portfolio-card {
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+.portfolio-card:hover {
+    transform: scale(1.05);
+}
+
+/* Services */
+.service-box {
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.service-box:hover {
+    background: #f8f9fa;
+    transform: translateY(-10px);
+}
